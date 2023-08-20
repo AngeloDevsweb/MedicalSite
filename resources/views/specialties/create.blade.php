@@ -1,4 +1,4 @@
-<!-- @extends('layouts.panel')
+@extends('layouts.panel')
 
 @section('content')
 
@@ -37,4 +37,4 @@
 </div>
     </div>
 
-@endsection -->
+@endsection
