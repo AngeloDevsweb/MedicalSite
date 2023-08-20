@@ -39,7 +39,9 @@ class SpecialtyController extends Controller
         $specialty ->description = $request->input('description');
         $specialty ->save();
 
-        return redirect('/especialidades');
+        $notification = 'La especialidad se ha creado correctamente.';
+
+        return redirect('/especialidades')->with(compact('notification'));
     }
 
     public function edit(Specialty $specialty){
@@ -63,11 +65,18 @@ class SpecialtyController extends Controller
         $specialty ->description = $request->input('description');
         $specialty ->save();
 
-        return redirect('/especialidades');
+        $notification = 'La especialidad se ha editado correctamente.';
+
+        return redirect('/especialidades')->with(compact('notification'));
+        
     }
 
     public function destroy(Specialty $specialty){
+        $deleteName = $specialty->name;
         $specialty->delete();
-        return redirect('/especialidades');
+
+        $notification = 'La especialidad '. $deleteName .' se ha eliminado correctamente.';
+
+        return redirect('/especialidades')->with(compact('notification'));
     }
 }
