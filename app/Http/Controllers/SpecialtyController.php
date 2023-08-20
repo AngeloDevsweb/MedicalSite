@@ -22,6 +22,18 @@ class SpecialtyController extends Controller
     }
 
     public function sendData(Request $request){
+
+        $rules = [
+            'name' => 'required|min:3'
+        ];
+
+        $messages = [
+            'name.required' => 'El nombre de la especialidad es obligatorio.',
+            'name.min' => 'El nombre de la especialidad debe tener mas de tres caracteres.'
+        ];
+
+        $this->validate($request, $rules, $messages);
+
         $specialty = new Specialty();
         $specialty ->name = $request->input('name');
         $specialty ->description = $request->input('description');
