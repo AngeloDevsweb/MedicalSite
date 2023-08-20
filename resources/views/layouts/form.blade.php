@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +8,14 @@
     {{config('app.name')}} | @yield('title')
   </title>
   <!-- Favicon -->
-  <link href="{{asset('img/brand/favicon.png')}}" rel="icon" type="image/png">
+  <link href="{{ asset ('img/brand/favicon.png') }} " rel="icon" type="image/png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <!-- Icons -->
-  <link href="{{ asset('js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
-  <link href="{{ asset('js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
+  <link href="{{ asset ('js/plugins/nucleo/css/nucleo.css') }} " rel="stylesheet" />
+  <link href="{{ asset ('js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }} " rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="{{asset('css/argon-dashboard.css?v=1.1.2')}}" rel="stylesheet" />
+  <link href=" {{ asset ('css/argon-dashboard.css?v=1.1.2') }} " rel="stylesheet" />
 </head>
 
 <body class="bg-default">
@@ -24,8 +23,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
       <div class="container px-4">
-        <a class="navbar-brand" href="{{ url('/') }}">
-          <img src="{{asset('img/brand/white.png')}}" />
+        <a class="navbar-brand" href="{{ url('/')}}">
+
+          <img src=" {{ asset ('img/brand/white.png') }} " />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
             <div class="row">
               <div class="col-6 collapse-brand">
                 <a href="../index.html">
-                  <img src="{{asset('img/brand/blue.png')}}">
+                  <img src="{{ asset ('img/brand/blue.png') }} ">
                 </a>
               </div>
               <div class="col-6 collapse-close">
@@ -49,20 +49,20 @@
           </div>
           <!-- Navbar items -->
           <ul class="navbar-nav ml-auto">
-            
+       
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="{{ route('register')}}">
+              <a class="nav-link nav-link-icon" href="{{ route ('register') }}">
                 <i class="ni ni-circle-08"></i>
-                <span class="nav-link-inner--text">Registrate</span>
+                <span class="nav-link-inner--text">Registro</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="{{ route('login') }}">
+              <a class="nav-link nav-link-icon" href="{{ route ('login') }}">
                 <i class="ni ni-key-25"></i>
-                <span class="nav-link-inner--text">Inicia Sesion</span>
+                <span class="nav-link-inner--text">Iniciar Sesion</span>
               </a>
             </li>
-            
+
           </ul>
         </div>
       </div>
@@ -73,8 +73,8 @@
         <div class="header-body text-center mb-7">
           <div class="row justify-content-center">
             <div class="col-lg-5 col-md-6">
-              <h1 class="text-white">@yield('title', 'Bienvenidos')</h1>
-              
+              <h1 class="text-white">@yield('title','Bienvenidos')</h1>
+              <p class="text-lead text-light">Estamos encantados de darles la bienvenida a nuestra plataforma de citas médicas, diseñada pensando en su comodidad y bienestar.</p>
             </div>
           </div>
         </div>
@@ -85,16 +85,14 @@
         </svg>
       </div>
     </div>
-    
-    @yield('content')
-
-    <!-- footer seccion -->
+    <!-- Page content -->
+ @yield('content')
     <footer class="py-5">
       <div class="container">
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
             <div class="copyright text-center text-xl-left text-muted">
-              © 2023 <a href="/" class="font-weight-bold ml-1">{{config('app.name')}}</a>
+              © 2023 <a href="/CitaMedica/public/" class="font-weight-bold ml-1" >{{ config('app.name') }}</a>
             </div>
           </div>
           <div class="col-xl-6">
@@ -102,7 +100,6 @@
               <li class="nav-item">
                 <a href="#" class="nav-link" target="_blank">¿Quienes somos?</a>
               </li>
-             
             </ul>
           </div>
         </div>
@@ -110,11 +107,11 @@
     </footer>
   </div>
   <!--   Core   -->
-  <script src=" {{asset('js/plugins/jquery/dist/jquery.min.js')}}"></script>
-  <script src=" {{asset('js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ asset ('js/plugins/jquery/dist/jquery.min.js') }} "></script>
+  <script src="{{ asset ('js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }} "></script>
   <!--   Optional JS   -->
   <!--   Argon JS   -->
-  <script src=" {{asset('js/argon-dashboard.min.js?v=1.1.2')}}"></script>
+  <script src="{{ asset ('') }} "></script>
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
   <script>
     window.TrackJS &&
