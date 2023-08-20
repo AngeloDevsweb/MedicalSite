@@ -41,4 +41,33 @@ class SpecialtyController extends Controller
 
         return redirect('/especialidades');
     }
+
+    public function edit(Specialty $specialty){
+        return view('specialties.edit', compact('specialty'));
+    }
+
+    public function update(Request $request, Specialty $specialty){
+
+        $rules = [
+            'name' => 'required|min:3'
+        ];
+
+        $messages = [
+            'name.required' => 'El nombre de la especialidad es obligatorio.',
+            'name.min' => 'El nombre de la especialidad debe tener mas de tres caracteres.'
+        ];
+
+        $this->validate($request, $rules, $messages);
+
+        $specialty ->name = $request->input('name');
+        $specialty ->description = $request->input('description');
+        $specialty ->save();
+
+        return redirect('/especialidades');
+    }
+
+    public function destroy(Specialty $specialty){
+        $specialty->delete();
+        return redirect('/especialidades');
+    }
 }
