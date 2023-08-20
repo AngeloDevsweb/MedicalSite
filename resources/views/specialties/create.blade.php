@@ -22,16 +22,16 @@
 <form action="{{ url('/especialidades') }}" method="POST">
     @csrf
 <div class="form-group">
-<label for="name"> Nombre de la especialidad </label>
+<label for="name">Nombre de especialidad</label>
 <input type="text" name="name" class="form-control">
 </div>
 
 <div class="form-group">
-<label for="description"> Descripcion </label>
+<label for="description">Descripcion</label>
 <input type="text" name="description" class="form-control">
 </div>
 
-<button type="submit" class="btn btn-sm btn-primary"> Crear especialidad</button>
+<button type="submit" class="btn btn-sm btn-primary">Crear especialidad</button>
 
 </form>
 </div>
