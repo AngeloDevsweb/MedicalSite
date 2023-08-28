@@ -23,7 +23,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="{{ url('/reserva') }}">
+            <a class="nav-link " href="{{ url('/citas') }}">
               <i class="fas fa-stethoscope text-info"></i> Reserva de Citas
             </a>
           </li>
