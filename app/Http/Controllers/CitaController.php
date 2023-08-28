@@ -27,8 +27,8 @@ class CitaController extends Controller
         ];
 
         $messages = [
-            'name.required' => 'El nombre de la especialidad es obligatorio.',
-            'name.min' => 'El nombre de la especialidad debe tener mas de tres caracteres.'
+            'name.required' => 'El nombre del paciente es obligatorio.',
+            'name.min' => 'El nombre del paciente debe tener mas de tres caracteres.'
         ];
 
         $this->validate($request, $rules, $messages);

@@ -38,15 +38,15 @@
 
 <div class="form-group">
 <label for="especialty">Especialidad</label>
-<input type="text" name="especialty" class="form-control" value="{{ old('name') }}" required>
+<input type="text" name="especialty" class="form-control" value="{{ old('especialty') }}" required>
 </div>
 <div class="form-group">
 <label for="doctor">Doctor</label>
-<input type="text" name="doctor" class="form-control" value="{{ old('name') }}" required>
+<input type="text" name="doctor" class="form-control" value="{{ old('doctor') }}" required>
 </div>
 <div class="form-group">
 <label for="hours">Horario</label>
-<input type="text" name="hours" class="form-control" value="{{ old('name') }}" required>
+<input type="text" name="hours" class="form-control" value="{{ old('hours') }}" required>
 </div>
 
 <div class="form-group">
