@@ -31,8 +31,8 @@ Route::post('/especialidades', [App\Http\Controllers\SpecialtyController::class,
 Route::put('/especialidades/{specialty}', [App\Http\Controllers\SpecialtyController::class, 'update']);
 Route::delete('/especialidades/{specialty}', [App\Http\Controllers\SpecialtyController::class, 'destroy']);
 
-Route::resource('medicos','App\Http\Controllers\DoctorController');
 
+Route::resource('medicos','App\Http\Controllers\DoctorController');
 Route::resource('pacientes','App\Http\Controllers\PatientController');
 
 //citas
@@ -40,3 +40,10 @@ Route::get('/citas', [App\Http\Controllers\CitaController::class, 'index']);
 Route::get('/citas/create', [App\Http\Controllers\CitaController::class, 'create']);
 Route::get('/citas/{cita}/edit', [App\Http\Controllers\CitaController::class, 'edit']);
 Route::post('/citas', [App\Http\Controllers\CitaController::class, 'sendData']);
+
+/*
+Route::resource('medicos','App\Http\Controllers\DoctorController');
+
+Route::resource('pacientes','App\Http\Controllers\PatientController');
+*/
+
