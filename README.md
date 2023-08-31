@@ -11,16 +11,22 @@
 
 LOGIN
 
-<img src="https://appmedical.netlify.app/loginapp.png" alt="Laravel Logo">
+<img src="https://appmedical.netlify.app/loginapp.png" alt="imagen login">
 
 DASHBOARD
 
-<img src="https://appmedical.netlify.app/dashboard.png" alt="Laravel Logo">
+<img src="https://appmedical.netlify.app/dash.png" alt="imagen dashboard">
 
 
 ## Sistema para gestion de citas medicas
 
 Este es un sistema MVC realizado para poder gestionar los usuarios Pacientes y Doctores para que estos pueden crear citas medicas y atenderlas respectivamente.
+
+## Universidad
+
+Este es un proyecto para una materia en la universidad privada domingo savio
+
+## Proyecto para Sistemas de Informacion III
 
 ## Integrantes del equipo:
 
