@@ -60,6 +60,11 @@ Luego que hayas creado tu base de datos e introducido su nombre en el .env, debe
 ```
 php artisan migrate
 ```
+Tambien es importante que ejecutes el siguiente comando para crear un seed muy pequeño pero que contendra las credenciales del administrador del sistema de esta manera 
+quedara registrado desde el inicio y solo necesitas iniciar sesion con esas credenciales. Las cuales si quieres modificarlas se encuentran en el archivo DatabaseSeeders
 
+```
+php artisan db:seed
+```
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
